@@ -11,10 +11,6 @@ app.use(cors());
 app.use(morgan('combined'));
 app.use(routes);
 
-// app.get('/ping', (req, res) => {
-// 	res.json({ message: 'pong' });
-// });
-
 const server = http.createServer(app);
 const port = process.env.PORT;
 

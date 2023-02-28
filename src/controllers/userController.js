@@ -3,7 +3,6 @@ import userService from '../services/userService.js';
 const signUp = async (req, res) => {
 	try {
 		const { name, email, password, profileImage } = req.body;
-		console.log(req.body);
 
 		if (!name || !email || !password || !profileImage)
 			res.this.status(400).json({ message: '키 에러' });
